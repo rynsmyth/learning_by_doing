@@ -17,13 +17,11 @@ puts "There are #{hours_per_day} hours in a day."
 puts "There are #{days_per_week} days in a week."
 puts """
 That means there are:
-#{seconds_per_hour} seconds in an hour,
-#{seconds_per_day} seconds in a day,
-#{seconds_per_week} seconds in a week.
+ #{seconds_per_hour} seconds in an hour,
+ #{seconds_per_day} seconds in a day,
+ #{seconds_per_week} seconds in a week.
 """
 puts """
-That means when you turn 20, you've been alive for
-#{seconds_to_20} seconds,
-and if you make it to 100, you will have lived
-#{seconds_to_100} seconds. Make them count!
+That means when you turn 20, you've been alive for #{seconds_to_20} seconds,
+and if you make it to 100, you will have lived #{seconds_to_100} seconds. Make them count!
 """
