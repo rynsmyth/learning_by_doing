@@ -11,17 +11,15 @@ seconds_per_year = seconds_per_day * 364
 seconds_to_20 = seconds_per_year * 20
 seconds_to_100 = seconds_per_year * 100
 
-puts "There are #{seconds_per_minute} seconds in a minute."
-puts "There are #{minutes_per_hour} minutes in an hour."
-puts "There are #{hours_per_day} hours in a day."
-puts "There are #{days_per_week} days in a week."
 puts """
+There are #{seconds_per_minute} seconds in a minute.
+There are #{minutes_per_hour} minutes in an hour.
+There are #{hours_per_day} hours in a day.
+There are #{days_per_week} days in a week.
 That means there are:
  #{seconds_per_hour} seconds in an hour,
  #{seconds_per_day} seconds in a day,
  #{seconds_per_week} seconds in a week.
-"""
-puts """
 That means when you turn 20, you've been alive for #{seconds_to_20} seconds,
 and if you make it to 100, you will have lived #{seconds_to_100} seconds. Make them count!
 """
