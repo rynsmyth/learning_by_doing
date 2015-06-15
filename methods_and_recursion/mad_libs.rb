@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def mad_lib_question(question)
-  print "#{question}" + ':'
+  puts "#{question}" + ':'
   gets.chomp
 end
 
@@ -33,7 +33,7 @@ that is near a/an #{noun_1} or up on a/an #{noun_2}.
 A good vacation place is one where you can ride #{plural_noun}
 or play #{game} or go hunting for #{plural_noun_2}. I like
 to spend my time #{verb_ing_1} or #{verb_ing_2}.
-When parents go on vacation, they spend their time eating
+When parents go on a vacation, they spend their time eating
 three #{plural_noun_3} a day, and fathers play golf, and mothers
 sit around #{verb_ing_3}. Last summer, my little brother
 fell in a/an #{noun_3} and got poison #{plant} all
