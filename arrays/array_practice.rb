@@ -3,7 +3,7 @@
 practice_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 puts practice_array.join("...") + "..."
-puts "T-#{practice_array.reverse.join(", ")}...BLASTOFF!"
+puts "T-#{practice_array.reverse.join(", ")}...  BLASTOFF!"
 puts "The last element is #{practice_array.last}"
 puts "The first element is #{practice_array.first}"
 puts "The third element is #{practice_array.at(2)}"
