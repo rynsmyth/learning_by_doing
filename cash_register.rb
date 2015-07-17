@@ -1,22 +1,31 @@
 #!/user/bin/env ruby
-#This is a csh register class
+
+#This is a cash register class
 class CashRegister
-  attr_reader :total
+  attr_reader :start
 
   def initialize
-    @total = 0.00
+    @start = 0.00
+  end
+
+  def total
+    '%.2f' % @start
   end
 
   def purchase(amount)
-    @total += amount
+    @start += amount
+    '%.2f' % @start
   end
 
   def pay(payment)
-    x = @total - payment
-    if x < 0
-      puts "Your change is: $#{x.abs}"
-    elsif x > 0
-      puts "You still owe: $#{x.abs}"
+    x = payment - @start.to_f
+    if x >= 0
+      x = '%.2f' % x
+      @start = 0.00
+      puts "Your change is $#{x}"
+    else
+      @start = '%.2f' % x.abs
+      puts "Your new total is $#{@start}"
     end
   end
 end
